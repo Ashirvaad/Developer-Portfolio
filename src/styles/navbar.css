@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  display: flex;
+  justify-content: space;
+  align-items: center;
+  padding: 1rem 5%;
+  background: rgba(0, 13, 38, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--midnight-blue);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  padding-right: 50rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  font-weight: 500;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}

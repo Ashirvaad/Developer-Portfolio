@@ -1,0 +1,40 @@
+- .gitignore
+- eslint.config.js
+- index.html
+- package-lock.json
+- package.json
+- postcss.config.js
+- public
+  - vite.svg
+- README.md
+- src
+  - App.css
+  - App.jsx
+  - assets
+    - hero-bg.jpg
+    - profile.jpg
+    - projects
+      - LandingPage.png
+      - luxury-website.png
+      - WCAGThemeInspector.png
+    - react.svg
+  - components
+    - About.jsx
+    - BackToTop.jsx
+    - Contact.jsx
+    - Hero.jsx
+    - Navbar.jsx
+    - Projects.jsx
+    - Skills.jsx
+  - index.css
+  - main.jsx
+  - styles
+    - about.css
+    - backtotop.css
+    - contact.css
+    - hero.css
+    - navbar.css
+    - projects.css
+    - skills.css
+- tailwind.config.js
+- vite.config.js

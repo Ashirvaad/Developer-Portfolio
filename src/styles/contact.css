@@ -1,0 +1,125 @@
+.contact {
+  padding: 6rem 10%;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Left info box */
+.contact-info {
+  background: rgba(3, 64, 120, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  flex: 1 1 300px;
+  color: var(--text-light);
+  box-shadow: 0 0 20px rgba(0, 230, 255, 0.2);
+}
+
+.contact-info h3 {
+  font-size:40px;
+  margin-bottom: 5rem;
+  color: var(--accent);
+}
+
+.contact-info a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-info a:hover {
+  text-shadow: 0 0 8px var(--accent);
+}
+
+/* Socials inside info box */
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-socials a {
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.contact-socials a:hover {
+  text-shadow: 0 0 10px var(--accent);
+}
+
+/* Right form box */
+.contact-form {
+  background: rgba(3, 64, 120, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 0 20px rgba(0, 230, 255, 0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--midnight-blue);
+  background: rgba(0, 31, 84, 0.6);
+  color: var(--text-light);
+  font-size: 1rem;
+  resize: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+}
+
+.btn-submit {
+  padding: 0.8rem 2rem;
+  border-radius: 9999px;
+  background: var(--accent);
+  color: var(--ebony);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #00cfff;
+  box-shadow: 0 0 15px var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+}

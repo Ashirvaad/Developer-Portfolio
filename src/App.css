@@ -1,0 +1,26 @@
+:root {
+  --ebony: #000000;
+  --downriver: #0D1B2A;
+  --midnight-blue: #182848;
+  --accent: #0cffe7;
+  --text-light: #00eeff;
+  --text-muted: #9aa7c0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background: var(--ebony);
+  color: var(--text-light);
+}
+
+section {
+  padding: 6rem 10%;
+}
+
+a {
+  text-decoration: none;
+}
+
+

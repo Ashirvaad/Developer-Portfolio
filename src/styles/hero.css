@@ -1,0 +1,84 @@
+.hero {
+  position: relative;
+ height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('../assets/hero-bg.jpg') center/cover no-repeat;
+  overflow: hidden; /* ensures glow doesn’t spill out */
+}
+
+/* Dark overlay with subtle neon glow edges */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 17, 40, 0.7); /* dark overlay */
+  z-index: 1;
+  /* Neon glow effect around edges */
+  box-shadow: inset 0 0 100px rgba(0, 230, 255, 0.2);
+  border-radius: 0;
+}
+
+/* Optional: add subtle radial glow at center for cinematic effect */
+.hero-overlay::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(3, 37, 41, 1) 0%, transparent 30%);
+  pointer-events: none;
+}
+
+/* Hero content above overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 6px rgba(0,230,255,0.4), 0 0 12px rgba(0,230,255,0.2); /* soft neon */
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-muted);
+}
+
+.hero-buttons a {
+  margin: 0 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--ebony);
+}
+
+.btn-primary:hover {
+  background: #00cfff;
+}
+
+.btn-secondary {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn-secondary:hover {
+  background: rgba(1, 129, 129, 0.63);
+  color: #ffffff;
+}
